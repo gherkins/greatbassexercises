@@ -1,0 +1,12 @@
+---
+layout: ../../../layouts/BaseLayout.astro
+---
+
+import App from './../../../app/App.jsx'
+import tarantula from './tarantula.js'
+
+###### **Dan Lopatka’s Tarantula Exercise in C-minor**
+
+<App client:load exercise={tarantula} />
+
+{tarantula.description}

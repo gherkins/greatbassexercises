@@ -1,10 +1,9 @@
 ---
-import App from './../app/App.jsx'
-import tarantula from './../app/exercise/tarantula.js'
+const {content} = Astro.props;
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './BaseLayout.scss'
 ---
 
-
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHVHTMJQEC"></script>
@@ -49,8 +48,7 @@ import tarantula from './../app/exercise/tarantula.js'
                 </div>
             </div>
 
-
-            <App client:load exercise={tarantula} />
+            <slot />
 
         </div>
     </body>

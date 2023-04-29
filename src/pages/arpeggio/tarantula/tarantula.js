@@ -1,6 +1,6 @@
 const tarantula = {
   category: 'Tarantula',
-  title: 'Dan Lopatka’s Tarantula Exercise in C-minor',
+  title: '',
   description: 'Super useful and fun way to practice 9th arpeggios over the C-minor scale.\nTry plucking each arpeggio 1-2-1-2-2-2.',
   bars: [
     {

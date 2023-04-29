@@ -4,7 +4,6 @@ import * as Tone from 'tone'
 import exercises from './Exercises'
 import Fretboard from './Fretboard'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
 
 import PianoURLs from './PianoURLs.js'
@@ -181,7 +180,7 @@ function App (props) {
 
   return (
     <React.Fragment>
-      <div className="row mb-4">
+      <div className="row mb-3 mt-4">
         <div className="col col-md-2">
 
           <button onClick={startStop}
@@ -244,19 +243,6 @@ function App (props) {
             </span>
             </div>,
           )}
-        </div>
-      </div>
-
-      <div className="row mb-3">
-        <div className="col">
-          <h6>
-            <strong>
-              {currentExercise.title}
-            </strong>
-          </h6>
-          <p className="description">
-            {currentExercise.description}
-          </p>
         </div>
       </div>
     </React.Fragment>
