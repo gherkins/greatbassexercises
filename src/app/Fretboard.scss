@@ -1,0 +1,66 @@
+table.fretboard {
+
+    tr:first-child {
+        td {
+            border-left: none !important;
+            border-right: none !important;
+        }
+    }
+
+    tr:nth-child(4) {
+        td {
+            border-bottom-width: 4px !important;
+        }
+    }
+
+    tr:nth-child(3) {
+        td {
+            border-bottom-width: 3px !important;
+        }
+    }
+
+    tr:nth-child(2) {
+        td {
+            border-bottom-width: 2px !important;
+        }
+    }
+
+    td.fret {
+        position: relative;
+        text-align: center;
+        width: 16%;
+        height: 25px;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+
+        &:last-child {
+            border-right: 1px solid #000;
+        }
+
+        .fretnumber {
+            position: relative;
+            top: -8px;
+        }
+
+        .dot {
+            position: absolute;
+            bottom: -9px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            background-color: #fff;
+
+            &.active {
+                background-color: #000;
+                color: #fff;
+                line-height: 18px;
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+    }
+}

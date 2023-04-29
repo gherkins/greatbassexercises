@@ -1,0 +1,38 @@
+.container {
+    max-width: 440px !important;
+}
+
+h1 {
+    font-size: 2rem !important;
+    font-family: 'Climate Crisis', serif;
+    line-height: 0.85 !important;
+}
+
+.indicator-container {
+    display: inline-block;
+    padding-right: 3px;
+
+    input {
+        cursor: pointer;
+    }
+
+    .indicator {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background-color: #fff;
+
+        &.active {
+            border-color: #0b5ed7;
+            background-color: #0b5ed7;
+        }
+    }
+}
+
+p.description {
+    white-space: pre-wrap;
+}

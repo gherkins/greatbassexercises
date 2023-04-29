@@ -1,0 +1,57 @@
+---
+import App from './../app/App.jsx'
+import tarantula from './../app/exercise/tarantula.js'
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHVHTMJQEC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+
+            gtag('js', new Date())
+            gtag('config', 'G-HHVHTMJQEC', {'anonymize_ip': true})
+
+        </script>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Collection of great exercises to level up your bass playing!" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon512.png" />
+        <meta property="og:site_name" content="greatbassexercises.com">
+        <meta property="og:url" content="http://greatbassexercises.com/">
+        <meta property="og:title" content="Great Bass Exercises">
+        <meta property="og:description" content="Collection of great exercises to level up your bass playing">
+        <meta property="og:image" content="https://greatbassexercises.com/icon512.png">
+        <title>Great Bass Exercises</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <div class="row mb-4">
+                <div class="col">
+                    <h1>
+                        Great<br />
+                        Bass<br />
+                        Exercises.com
+                    </h1>
+                </div>
+            </div>
+
+
+            <App client:load exercise={tarantula} />
+
+        </div>
+    </body>
+</html>
