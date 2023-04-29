@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import * as Tone from 'tone'
-import PianoMp3 from './tonejs-instrument-piano-mp3'
-import metronomeSound from './audio/metronome.wav'
 
 import exercises from './Exercises'
 import Fretboard from './Fretboard'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
+
+import PianoURLs from './PianoURLs.js'
 
 let scheduleEvent
 
@@ -151,7 +151,8 @@ function App (props) {
   const initInstruments = () => {
 
     const initPiano = new Promise((resolve) => {
-      piano = new PianoMp3({
+      piano = new Tone.Sampler({
+        urls: PianoURLs,
         onload: () => {
           resolve()
         },
@@ -159,7 +160,7 @@ function App (props) {
     })
 
     const initMetro = new Promise((resolve) => {
-      metro = new Tone.Player(metronomeSound, () => {
+      metro = new Tone.Player('/audio/metronome.wav', () => {
         resolve()
       }).toDestination()
     })
