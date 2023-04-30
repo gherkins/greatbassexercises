@@ -1,7 +1,4 @@
 const chords10ths = {
-  category: 'Chords',
-  title: 'G major 10th chords',
-  description: `Nice 10th chord-exercise to play over the G major scale.`,
   bars: [],
 }
 
