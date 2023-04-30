@@ -17,6 +17,8 @@ const schema = JSON.stringify({
     },
     "description": content.description,
 });
+
+const year = new Date().getFullYear();
 ---
 
 <html lang="en">
@@ -106,6 +108,22 @@ const schema = JSON.stringify({
                 <slot />
             </div>
         </main>
+
+
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+
+                    <p class="col-md-6 mb-0 text-muted">
+                        © {year} datenkatze.de
+                    </p>
+
+                    <ul class="nav col-md-6 justify-content-end">
+                        <li class="nav-item"><a href="/imprint" class="nav-link px-2 text-muted">Imprint / Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
         <script src={bootstrap}></script>
     </body>
