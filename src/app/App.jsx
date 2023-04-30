@@ -5,7 +5,7 @@ import Fretboard from './Fretboard'
 
 import './App.scss'
 
-import PianoURLs from './PianoURLs.js'
+import PianoUrlMap from './PianoUrlMap.js'
 
 let scheduleEvent
 
@@ -136,10 +136,18 @@ function App (props) {
   }
 
   const initInstruments = () => {
+    const urls = {}
+    props.exercise.bars.forEach(bar => {
+      bar.chord.forEach(note => {
+        if( PianoUrlMap[note] ){
+          urls[note] = PianoUrlMap[note]
+        }
+      })
+    })
 
     const initPiano = new Promise((resolve) => {
       piano = new Tone.Sampler({
-        urls: PianoURLs,
+        urls,
         onload: () => {
           resolve()
         },

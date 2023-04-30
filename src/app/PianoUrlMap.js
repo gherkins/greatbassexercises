@@ -1,4 +1,4 @@
-const PianoURLs = {
+const PianoUrlMap = {
   'A3': '/audio/piano/A3.mp3',
   'A4': '/audio/piano/A4.mp3',
   'A5': '/audio/piano/A5.mp3',
@@ -37,4 +37,4 @@ const PianoURLs = {
   'G#4': '/audio/piano/Gs4.mp3',
 }
 
-export default PianoURLs
+export default PianoUrlMap
