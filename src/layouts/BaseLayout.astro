@@ -54,47 +54,46 @@ const schema = JSON.stringify({
         <header>
             <nav class="navbar">
                 <div class="container">
-                    <a class="navbar-brand" href="/">GreatBassExercises.com</a>
+                    <a class="navbar-brand" href="/">
+                        <img src="/icon192.png" width="30" height="30" class="d-inline-block align-top"
+                             alt="GreatBassExercises.com Logo">
+                        GreatBassExercises.com
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mb-4">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
-                                    All Exercises
-                                </a>
-                                <div class="dropdown-menu">
-                                    <p class="px-3 text-muted mb-0">Scales:</p>
-                                    <a class="dropdown-item" href="/scales/c-major-fourths/">C Major in fourths</a>
-                                    <a class="dropdown-item" href="/scales/c-major-thirds/">C Major in thirds</a>
-                                    <a class="dropdown-item" href="/scales/d-minor-thirds/">D Minor in thirds</a>
-                                    <a class="dropdown-item" href="/scales/e-melodic-minor-thirds/">E Melodic Minor in thirds</a>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <p class="px-3 text-muted mb-0">Arpeggios:</p>
-                                    <a class="dropdown-item" href="/arpeggio/tarantula/">C Minor Tarantula</a>
-                                    <a class="dropdown-item" href="/arpeggio/tarantula-desc/">C Minor Tarantula Descending</a>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <p class="px-3 text-muted mb-0">Chords:</p>
-                                    <a class="dropdown-item" href="/chords/g-major-10ths/">G Major 10th Chords</a>
-                                    <a class="dropdown-item" href="/chords/d-triads/">Triad-Chords in D</a>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <p class="px-3 text-muted mb-0">Yoga:</p>
-                                    <a class="dropdown-item" href="/yoga/hazard-part-a/">Hazard Exercise Part A</a>
-                                    <a class="dropdown-item" href="/yoga/the-clamp/">The Clamp</a>
-                                </div>
+                                <h3 id="major-scales">Major Scales</h3>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a href="/scales/c-major-fourths/">C Major in fourths</a></li>
+                                    <li class="nav-item"><a href="/scales/c-major-thirds/">C Major in thirds</a></li>
+                                </ul>
+                                <h3 id="minor-scales">Minor Scales</h3>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a href="/scales/d-minor-thirds/">D Minor in thirds</a></li>
+                                    <li class="nav-item"><a href="/scales/e-melodic-minor-thirds/">E Melodic Minor in
+                                        thirds</a></li>
+                                </ul>
+                                <h3 id="arpeggios">Arpeggios</h3>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a href="/arpeggio/tarantula/">C Minor Tarantula</a></li>
+                                    <li class="nav-item"><a href="/arpeggio/tarantula-desc/">C Minor Tarantula
+                                        Descending</a></li>
+                                </ul>
+                                <h3 id="chords">Chords</h3>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a href="/chords/g-major-10ths/">G Major 10th Chords</a></li>
+                                    <li class="nav-item"><a href="/chords/d-triads/">Triads in D</a></li>
+                                </ul>
+                                <h3 id="yoga">Yoga</h3>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a href="/yoga/hazard-part-a/">Hazard Exercise Part A</a></li>
+                                    <li class="nav-item"><a href="/yoga/the-clamp/">The Clamp</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
