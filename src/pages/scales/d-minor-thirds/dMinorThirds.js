@@ -1,7 +1,4 @@
 const dMinorThirds = {
-  category: 'Basic',
-  title: 'D minor scale thirds',
-  description: 'Simple exercise to get used to playing the D minor scale in thirds',
   bars: [],
 }
 
