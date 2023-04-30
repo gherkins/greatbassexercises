@@ -1,6 +1,7 @@
 ---
 const {content} = Astro.props;
 import 'bootstrap/dist/css/bootstrap.min.css'
+import bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
 import './BaseLayout.scss'
 ---
 
@@ -31,25 +32,67 @@ import './BaseLayout.scss'
         <meta property="og:description" content="Collection of great exercises to level up your bass playing">
         <meta property="og:image" content="https://greatbassexercises.com/icon512.png">
         <title>Great Bass Exercises</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
-              rel="stylesheet">
     </head>
     <body>
-        <div class="container mt-3">
-            <div class="row mb-4">
-                <div class="col">
-                    <h1>
-                        Great<br />
-                        Bass<br />
-                        Exercises.com
-                    </h1>
+
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="/">GreatBassExercises.com</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Help / FAQ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    All Exercises
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <p class="px-3 text-muted mb-0"><strong>Arpeggios:</strong></p>
+                                    <a class="dropdown-item" href="/arpeggio/tarantula">Tarantula</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="container mt-5">
+                <slot />
+            </div>
+        </main>
+
+        <footer>
+            <div class="container mt-5">
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="/impressum" class="nav-link px-2 text-muted"><small>Imprint</small></a></li>
+                        <li class="nav-item"><a href="/datenschutz" class="nav-link px-2 text-muted"><small>Privacy-Policy</small></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </footer>
 
-            <slot />
-
-        </div>
+        <script src={bootstrap}></script>
     </body>
 </html>
