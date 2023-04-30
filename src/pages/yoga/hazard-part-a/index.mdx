@@ -4,6 +4,7 @@ title: Steve Bailey´s Hazard Exercise Part A
 description: It's like yoga - for your fingers...
 ---
 
+import Manual from './../../../components/Manual.astro'
 import App from './../../../app/App.jsx'
 import exercise from './hazardPartA.js'
 
@@ -11,8 +12,12 @@ import exercise from './hazardPartA.js'
 
 <App client:load exercise={exercise} />
 
-It's like yoga - for your fingers...
+> « It's like yoga - for your fingers...
 
 Note how fingers 1 & 2 stay in place.
 
-Practice at your own risk.
+Practice at your own risk. »
+
+<hr class="my-5"/>
+
+<Manual />

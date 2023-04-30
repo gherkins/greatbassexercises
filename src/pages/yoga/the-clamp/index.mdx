@@ -4,6 +4,7 @@ title: The Clamp
 description: Might cause some slight tension., practice at your own risk.
 ---
 
+import Manual from './../../../components/Manual.astro'
 import App from './../../../app/App.jsx'
 import exercise from './theClamp.js'
 
@@ -11,8 +12,12 @@ import exercise from './theClamp.js'
 
 <App client:load exercise={exercise} />
 
-You always just pluck the string where your 1st finger is.
+> « You always just pluck the string where your 1st finger is.
 
 All others fingers stay in place - all the time.
 
-Might cause some slight tension., practice at your own risk.
+Might cause some slight tension., practice at your own risk. »
+
+<hr class="my-5"/>
+
+<Manual />
