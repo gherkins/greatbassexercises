@@ -1,9 +1,4 @@
 const theClamp = {
-  category: 'Yoga',
-  title: `The Clamp`,
-  description: `You always just pluck the string where your 1st finger is.
-All others fingers stay in place - all the time.
-Might cause some slight tension., practice at your own risk.`,
   bars: [],
 }
 
