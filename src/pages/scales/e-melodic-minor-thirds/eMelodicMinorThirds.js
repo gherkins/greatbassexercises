@@ -1,7 +1,4 @@
 const eMelodicMinorThirds = {
-  category: 'Basic',
-  title: 'E melodic minor scale thirds',
-  description: 'Simple exercise to get used to playing the melodic minor scale in thirds',
   bars: [
     {
       chord: [
