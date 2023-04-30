@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import * as Tone from 'tone'
 
-import exercises from './Exercises'
 import Fretboard from './Fretboard'
 
 import './App.scss'
@@ -57,17 +56,6 @@ function App (props) {
       updateState({})
     })
 
-  }
-
-  const exercisesByCategories = () => {
-    const categories = {}
-    Object.keys(exercises).forEach(exerciseKey => {
-      if (!categories[exercises[exerciseKey].category]) {
-        categories[exercises[exerciseKey].category] = {}
-      }
-      categories[exercises[exerciseKey].category][exerciseKey] = exercises[exerciseKey]
-    })
-    return categories
   }
 
   const [currentTick, setCurrentTick] = useState()

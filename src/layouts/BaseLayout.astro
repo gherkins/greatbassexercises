@@ -23,16 +23,16 @@ import './BaseLayout.scss'
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Collection of great exercises to level up your bass playing!" />
+        <meta name="description" content={content.description} />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon512.png" />
         <meta property="og:site_name" content="greatbassexercises.com">
         <meta property="og:url" content="http://greatbassexercises.com/">
-        <meta property="og:title" content="Great Bass Exercises">
-        <meta property="og:description" content="Collection of great exercises to level up your bass playing">
+        <meta property="og:title" content={content.title}>
+        <meta property="og:description" content={content.description}>
         <meta property="og:image" content="https://greatbassexercises.com/icon512.png">
         <link rel="sitemap" href="/sitemap-index.xml">
-        <title>Great Bass Exercises</title>
+        <title>{content.title}</title>
     </head>
     <body>
 

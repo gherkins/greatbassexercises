@@ -1,5 +1,3 @@
-import cMajorA from './data/cMajorA'
-
 const cMajorThirds = {
   category: 'Basic',
   title: 'C major scale thirds',
@@ -7,7 +5,56 @@ const cMajorThirds = {
   bars: [],
 }
 
-const scale = cMajorA
+const scale = [
+  {
+    string: 1,
+    fret: 8,
+  },
+  {
+    string: 1,
+    fret: 10,
+  },
+  {
+    string: 2,
+    fret: 7,
+  },
+  {
+    string: 2,
+    fret: 8,
+  },
+  {
+    string: 2,
+    fret: 10,
+  },
+  {
+    string: 3,
+    fret: 7,
+  },
+  {
+    string: 3,
+    fret: 9,
+  },
+  {
+    string: 3,
+    fret: 10,
+  },
+  {
+    string: 4,
+    fret: 7,
+  },
+  {
+    string: 4,
+    fret: 9,
+  },
+  {
+    string: 4,
+    fret: 10,
+  },
+  {
+    string: 4,
+    fret: 12,
+  },
+]
 
 const bar = {
   chord: [
