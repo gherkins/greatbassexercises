@@ -1,7 +1,4 @@
 const cMajorFourths = {
-  category: 'Basic',
-  title: 'C major scale fourths',
-  description: 'Simple exercise to get used to playing the C major scale in fourths',
   bars: [],
 }
 
