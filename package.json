@@ -11,17 +11,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.0",
-    "@astrojs/react": "^2.1.1",
-    "@astrojs/sitemap": "^1.2.2",
-    "@popperjs/core": "^2.11.7",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "astro": "^2.3.2",
-    "bootstrap": "^5.2.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sass": "^1.62.1",
-    "tone": "^14.7.77"
+    "@astrojs/mdx": "^3.0.0",
+    "@astrojs/react": "^3.3.4",
+    "@astrojs/sitemap": "^3.1.4",
+    "@popperjs/core": "^2.11.8",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.8.1",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.77.0",
+    "tone": "^14.9.17"
   }
 }
