@@ -155,7 +155,7 @@ function App (props) {
     })
 
     const initMetro = new Promise((resolve) => {
-      metro = new Tone.Player('/audio/metronome.wav', () => {
+      metro = new Tone.Player('/greatbassexercises/audio/metronome.wav', () => {
         resolve()
       }).toDestination()
     })
