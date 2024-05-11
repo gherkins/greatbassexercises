@@ -13,9 +13,9 @@ const schema = JSON.stringify({
     "headline": content.title,
     "author": {
         "@type": "Organization",
-        "name": "greatbassexercises.com",
-        "url": "https://greatbassexercises.com/",
-        "logo": "https://greatbassexercises.com/icon512.png"
+        "name": "greatbassexercises",
+        "url": "https://datenkatze.de/greatbassexercises/",
+        "logo": "https://datenkatze.de/greatbassexercises/icon512.png"
     },
     "description": content.description,
 });
@@ -44,11 +44,11 @@ const year = new Date().getFullYear();
         <meta name="description" content={content.description} />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon512.png" />
-        <meta property="og:site_name" content="greatbassexercises.com">
-        <meta property="og:url" content="https://greatbassexercises.com/">
+        <meta property="og:site_name" content="greatbassexercises">
+        <meta property="og:url" content="https://datenkatze.de/greatbassexercises/">
         <meta property="og:title" content={content.title}>
         <meta property="og:description" content={content.description}>
-        <meta property="og:image" content="https://greatbassexercises.com/icon512.png">
+        <meta property="og:image" content="https://datenkatze.de/greatbassexercises/icon512.png">
         <link rel="sitemap" href="/sitemap-index.xml">
         <script type="application/ld+json" set:html={schema}></script>
         <title>{content.title}</title>
@@ -60,8 +60,8 @@ const year = new Date().getFullYear();
                 <div class="container">
                     <a class="navbar-brand" href="/">
                         <img src="/icon192.png" width="30" height="30" class="d-inline-block align-top"
-                             alt="GreatBassExercises.com Logo">
-                        GreatBassExercises.com
+                             alt="GreatBassExercises Logo">
+                        GreatBassExercises
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"

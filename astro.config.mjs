@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://greatbassexercises.com',
+  site: 'https://datenkatze.de/greatbassexercises',
+  base: '/greatbassexercises',
   integrations: [react(), mdx(), sitemap()],
 })
