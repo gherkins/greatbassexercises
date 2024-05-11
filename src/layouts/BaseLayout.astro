@@ -133,7 +133,6 @@ const year = new Date().getFullYear();
         <script>
             const currentPath = document.querySelector('nav').getAttribute('data-current-path');
             document.querySelectorAll('.nav-item a').forEach(item => {
-                console.log(item.getAttribute('href'), currentPath);
                 if (item.getAttribute('href') === currentPath) {
                     item.classList.add('text-dark');
                     item.classList.add('fw-bold');
